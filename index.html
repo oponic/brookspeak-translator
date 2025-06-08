@@ -31,8 +31,26 @@
 
         async function loadDictionary() {
             try {
-                const response = await fetch('https://gist.githubusercontent.com/oponic/cc0dbbb6e60dcd969b73f0d365771b5c/raw/1df9d3a02d0a062b238d400dac2e17b854d3202a/dictionary.yaml');
-                const yamlText = await response.text();
+                const yamlText = `realed up: real
+real: lmao
+for rea: fr
+rea: lol
+re: :|
+for ra: fr
+for reas: fr
+on ra: fr
+ra: *nods*
+fr: fr
+Forreals: fr
+okie: ok
+ral: ok
+gu: 
+ae:
+Anyways: I don't care, moving on
+qhat: what
+What: what are you talking about
+whay: wdym
+qhay: im confused`;
                 const lines = yamlText.split('\n');
                 
                 for (const line of lines) {
